@@ -7,55 +7,55 @@ import React, { useState } from 'react';
       name: 'Waffle with Berries',
       category: 'Waffle',
       price: 6.5,
-      img: "src/assets/images/waffle.jpg"
+      img: "public/assets/images/waffle.jpg"
     },
     {
       name: 'Vanilla Bean Crème Brûlée',
       category: 'Crème Brûlée',
       price: 7.0,
-      img: "src/assets/images/vanilla-bean.jpg"
+      img: "public/assets/images/vanilla-bean.jpg"
     },
     {
       name: 'Macaron Mix of Five',
       category: 'Macaron',
       price: 8.0,
-      img: "src/assets/images/macaron.jpg"
+      img: "public/assets/images/macaron.jpg"
     },
     {
       name: 'Classic Tiramisu',
       category: 'Tiramisu',
       price: 5.5,
-      img: "src/assets/images/tiramisu.jpg"
+      img: "public/assets/images/tiramisu.jpg"
     },
     {
       name: 'Pistachio Baklava',
       category: 'Baklava',
       price: 4.0,
-      img: "src/assets/images/baklava.jpg"
+      img: "public/assets/images/baklava.jpg"
     },
     {
       name: 'Lemon Meringue Pie',
       category: 'Pie',
       price: 5.0,
-      img: "src/assets/images/lemon-pie.jpg"
+      img: "public/assets/images/lemon-pie.jpg"
     },
     {
       name: 'Red Velvet Cake',
       category: 'Cake',
       price: 4.5,
-      img: "src/assets/images/strawberry-cake.jpg"
+      img: "public/assets/images/strawberry-cake.jpg"
     },
     {
       name: 'Salted Caramel Brownie',
       category: 'Brownie',
       price: 4.5,
-      img: "src/assets/images/caramel-brownie.jpg"
+      img: "public/assets/images/caramel-brownie.jpg"
     },
     {
       name: 'Vanilla Panna Cotta',
       category: 'Panna Cotta',
       price: 6.5,
-      img: "src/assets/images/vanilla-cotta.jpg"
+      img: "public/assets/images/vanilla-cotta.jpg"
     },
   ];
 
@@ -108,7 +108,7 @@ function CartItem({img , category, name, price}) {
       <div className="buttons">
         {quantity === 0 ? (
           <div className="add-to-cart"  onClick={handleAddToCart}>
-            <img className="cart-img" src="src/assets/images/shopping-cart.svg" />
+            <img className="cart-img" src="public/assets/images/shopping-cart.svg" />
             <span>Add To Cart</span>
           </div>
         ) : (
@@ -151,7 +151,7 @@ function Basket({ quantity }) {
             <h3>$46.50</h3>
           </div>
           <div className="carbon-area">
-            <img src="src/assets/images/carbon_tree.svg" />
+            <img src="public/assets/images/carbon_tree.svg" />
             <h5>This is a carbon-neutral carbon-neutral</h5>
           </div>
           <button>Confirm Order</button>
